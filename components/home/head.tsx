@@ -16,7 +16,7 @@ const Head: React.FC = (): JSX.Element => {
                   src="/building3.jpg"
                   width="550"
                 />
-                <div className="flex flex-col justify-center space-y-4">
+                <div className="flex flex-col justify-center ml-4 space-y-6">
                   <div className="space-y-10">
                     <h1 className="text-3xl font-bold text-zinc-700 tracking-tighter sm:text-5xl xl:text-6xl/none">
                       Building the Future
@@ -34,7 +34,7 @@ const Head: React.FC = (): JSX.Element => {
                       Our Services
                     </Link>
                     <Link
-                      className="inline-flex zinc-950 h-10 items-center justify-center rounded-md border border-zinc-200 border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:border-zinc-800 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-300"
+                      className="inline-flex zinc-950 h-10 items-center justify-center rounded-md border border-zinc-200 border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:border-zinc-800 dark:border-zinc-800 dark:bg-zinc-950 dark:text-white dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-300"
                       href="/page/contact"
                     >
                       Contact Us

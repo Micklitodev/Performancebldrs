@@ -7,7 +7,8 @@ const Input: React.FC<InputProps> = ({
   type,
   name,
   className, 
-  onChange
+  onChange,
+  value
 
 }: any) => {
   return (
@@ -18,6 +19,7 @@ const Input: React.FC<InputProps> = ({
       placeholder={placeholder}
       name={name}
       onChange={onChange}
+      value={value}
     />
   );
 };

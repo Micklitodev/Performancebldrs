@@ -16,7 +16,7 @@ export default function LogoIcon({ size }: LogoProps) {
 
   return (
     <Image
-      className="absolute"
+      className="absolute mt-12"
       height={h}
       width={w}
       src="/cover.png"

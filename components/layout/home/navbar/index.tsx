@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="bg-white shadow-purple-300 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center overflow-hidden">
-            <LogoIcon size={330} />
+            <LogoIcon size={160} />
           </Link>
           <div
             className="hidden w-full md:block md:w-auto"
