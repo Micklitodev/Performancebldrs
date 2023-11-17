@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FeaturedProjects: React.FC = (): JSX.Element => {
   return (
@@ -9,6 +10,8 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
         </h2>
         <div className="mt-10 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex justify-center items-center">
+          <Link href='/page/projects/detail/Milton'>  
+          <p className="text-center"> Milton </p>
             <Image
               alt="Project 1"
               className="rounded-lg object-cover"
@@ -20,8 +23,12 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
               }}
               width="300"
             />
+            </Link>
           </div>
+      
           <div className="flex justify-center items-center">
+          <Link href='/page/projects/detail/Paddocks'>  
+          <p className="text-center"> Paddocks</p>
             <Image
               alt="Project 2"
               className="rounded-lg object-cover"
@@ -33,8 +40,11 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
               }}
               width="300"
             />
+            </Link>
           </div>
           <div className="flex justify-center items-center">
+          <Link href=''>  
+          <p className="text-center"> untitled </p>
             <Image
               alt="Project 3"
               className="rounded-lg object-cover"
@@ -46,6 +56,7 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
               }}
               width="300"
             />
+            </Link>
           </div>
         </div>
       </section>
