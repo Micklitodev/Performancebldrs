@@ -3,17 +3,8 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const SlideImages: any[] = [
-  {
-    url: "/building1.jpg",
-    caption: "img1",
-  },
-  {
-    url: "/building2.jpg",
-    caption: "img2",
-  },
-];
+import { usePathname } from "next/navigation";
+import imgPaths from "@/utils/imageLoader";
 
 const windowStyle: React.CSSProperties = {
   backgroundRepeat: "no-repeat",
@@ -24,10 +15,10 @@ const windowStyle: React.CSSProperties = {
 const ProjectDetail = () => {
   let selectedProj: any;
 
-  if (typeof window !== "undefined") {
-    let url = window.location.href;
-    selectedProj = url.split("/").pop();
-  }
+  const pathname = usePathname();
+  selectedProj = pathname.split("/").pop();
+
+  let imagePaths = imgPaths(selectedProj);
 
   return (
     <div className="flex mt-10">
@@ -39,15 +30,15 @@ const ProjectDetail = () => {
       >
         <div className="text-center">
           <br />
-          <div className="" style={{ maxWidth: 780 }}>
-            <Carousel showArrows={true} infiniteLoop={true}>
-              {SlideImages.map((slideImage, index: number) => (
+          <div className="ml-10" style={{ maxWidth: 770 }}>
+          <Carousel showArrows={true} infiniteLoop={true} showThumbs={true} thumbWidth={40}>
+              {imagePaths.map((slideImage: any, index: number) => (
                 <div key={index}>
                   <img
-                    src={`${slideImage.url}`}
+                    src={`${slideImage.default.src}`}
                     alt={`Project Img ${index + 1}`}
                     className="aspect-[1/1] object-cover object-center rounded-md"
-                    style={{ maxHeight: 500, maxWidth: 700 }}
+                    style={{ maxHeight: 500, maxWidth: 800 }}
                   />
                 </div>
               ))}
