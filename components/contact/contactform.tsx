@@ -15,9 +15,7 @@ export default function ContactForm() {
   });
 
   const sendMail = async (mail: any) => {
-
     try {
-      console.log(mail)
       const res = await fetch(lambdaFuncEP, {
         mode: "cors",
         method: "POST",
@@ -35,7 +33,7 @@ export default function ContactForm() {
       console.log(Error);
     } finally {
       setTimeout(() => {
-        //  window.location.assign('/')
+        window.location.assign("/");
       }, 5000);
     }
   };
