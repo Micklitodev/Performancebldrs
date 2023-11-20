@@ -3,7 +3,7 @@ import Link from "next/link";
 const AboutComponent = () => {
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 mb-40">
+      <section className="w-full py-12 md:py-24 lg:py-32 mb-40 mt-20">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -20,25 +20,21 @@ const AboutComponent = () => {
           <div className="mx-auto grid max-w-sm items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
             <div className="grid gap-1">
               <h3 className="text-lg font-bold">Our Mission</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                To deliver high-quality products that bring joy and convenience
-                to all our customers. We are a leading company in the industry, committed to providing
-                excellent services and products.
+              <p className="text-sm text-zinc-600 dark:text-zinc-500">
+                
+Dedicated to delivering top-notch services and products that enhance satisfaction and convenience for all our clients, we stand as a prominent leader in the construction industry. Specializing in demolition and ground-up construction for commercial buildings, our commitment is unwavering as we strive to provide excellence in both services and products. Trust us to bring expertise and quality to every phase of your commercial construction project.
               </p>
             </div>
             <div className="grid gap-1">
               <h3 className="text-lg font-bold">Our Vision</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                To be a globally recognized brand known for innovation and
-                sustainability. We are a leading company in the industry, committed to providing
-                excellent services and products.
+              <p className="text-sm text-zinc-600 dark:text-zinc-500">
+              Striving to be a globally recognized brand celebrated for innovation and sustainability, we stand as a prominent leader in the construction industry. Committed to delivering exceptional services and products, our company is dedicated to setting industry standards. Trust us to bring cutting-edge solutions and a commitment to sustainability to every project, solidifying our position as a leader in the global construction arena.
               </p>
             </div>
             <div className="grid gap-1">
               <h3 className="text-lg font-bold">Our Values</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                We value integrity, innovation, and customer satisfaction. We are a leading company in the industry, committed to providing
-                excellent services and products.
+              <p className="text-sm text-zinc-600 dark:text-zinc-500">
+              Embracing values of integrity, innovation, and unwavering commitment to customer satisfaction, we stand as a leading force in the construction industry. Our dedication lies in delivering excellent services and products, ensuring that integrity, innovation, and customer satisfaction remain at the forefront of every project we undertake. Trust us for a construction experience that exemplifies these core values, setting us apart as industry leaders.
               </p>
             </div>
           </div>

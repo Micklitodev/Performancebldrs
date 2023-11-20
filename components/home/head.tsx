@@ -21,9 +21,19 @@ const Head: React.FC = (): JSX.Element => {
                     <h1 className="text-3xl font-bold text-zinc-700 tracking-tighter sm:text-5xl xl:text-6xl/none">
                       Building the Future
                     </h1>
-                    <p className="max-w-[600px] text-zinc-600 md:text-xl dark:text-zinc-400">
-                      We provide high quality construction services to ensure
-                      your projects are completed on time and within budget.
+                    <p className="max-w-[600px] text-zinc-500 md:text-xl dark:text-zinc-500">
+                      At our premier construction company, we specialize in
+                      delivering timely and budget-conscious construction
+                      services. With a dedicated team of professionals, we
+                      ensure meticulous planning, execution, and management for
+                      your projects. Our commitment to quality craftsmanship,
+                      safety, and sustainability is reflected in our
+                      personalized approach. By leveraging cutting-edge
+                      technology and innovative methodologies, we optimize
+                      efficiency while staying within budget. Choose us as your
+                      construction partner for a seamless blend of
+                      professionalism and excellence in turning your vision into
+                      reality.
                     </p>
                   </div>
                   <div className="flex flex-col gap-2 min-[400px]:flex-row">

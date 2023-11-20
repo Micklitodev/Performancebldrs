@@ -29,6 +29,78 @@ const slideImages = [
   {
     url: "/ClientBrands/verizon.png",
   },
+  {
+    url: "/ClientBrands/ace.png",
+  },
+  {
+    url: "/ClientBrands/att.png",
+  },
+  {
+    url: "/ClientBrands/crunch.png",
+  },
+  {
+    url: "/ClientBrands/fivebelow.png",
+  },
+  {
+    url: "/ClientBrands/homegoods.png",
+  },
+  {
+    url: "/ClientBrands/rackroomshoes.png",
+  },
+  {
+    url: "/ClientBrands/tjmaxx.png",
+  },
+  {
+    url: "/ClientBrands/verizon.png",
+  },
+  {
+    url: "/ClientBrands/ace.png",
+  },
+  {
+    url: "/ClientBrands/att.png",
+  },
+  {
+    url: "/ClientBrands/crunch.png",
+  },
+  {
+    url: "/ClientBrands/fivebelow.png",
+  },
+  {
+    url: "/ClientBrands/homegoods.png",
+  },
+  {
+    url: "/ClientBrands/rackroomshoes.png",
+  },
+  {
+    url: "/ClientBrands/tjmaxx.png",
+  },
+  {
+    url: "/ClientBrands/verizon.png",
+  },
+  {
+    url: "/ClientBrands/ace.png",
+  },
+  {
+    url: "/ClientBrands/att.png",
+  },
+  {
+    url: "/ClientBrands/crunch.png",
+  },
+  {
+    url: "/ClientBrands/fivebelow.png",
+  },
+  {
+    url: "/ClientBrands/homegoods.png",
+  },
+  {
+    url: "/ClientBrands/rackroomshoes.png",
+  },
+  {
+    url: "/ClientBrands/tjmaxx.png",
+  },
+  {
+    url: "/ClientBrands/verizon.png",
+  },
 ];
 
 const ClientLogos = () => {
@@ -40,7 +112,7 @@ const ClientLogos = () => {
         </h2>
         <br />
         <div className="flex justify-center">
-          <div style={{ width: "100%" }}>
+          <div style={{ width: "95%" }}>
             <Carousel
               showArrows={true}
               infiniteLoop={true}
@@ -48,6 +120,8 @@ const ClientLogos = () => {
               showStatus={false}
               centerMode={true}
               centerSlidePercentage={20} 
+              autoPlay={true}
+              interval={2500}
             >
               {slideImages.map((slideImage, index) => (
                 <div key={index}>

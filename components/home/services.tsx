@@ -1,7 +1,7 @@
 const Services: React.FC = (): JSX.Element => {
   return (
     <>
-      <section className="py-20 px-6 bg-white" id='Services'>
+      <section className="py-20 px-6 bg-white" id="Services">
         <h2 className="text-4xl font-bold text-center text-gray-700">
           Our Services
         </h2>
@@ -35,8 +35,11 @@ const Services: React.FC = (): JSX.Element => {
               Construction
             </h3>
             <p className="text-gray-600  max-w-[300px] text-center">
-              We provide quality construction services that'll fit your needs
-              and budget.
+              Experience tailored construction solutions to fit your needs and
+              budget, delivered with uncompromising quality. Our dedicated
+              services are designed to meet your unique requirements, ensuring a
+              seamless and cost-effective construction experience. Trust us for
+              reliable and budget-friendly construction solutions.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4">
@@ -59,8 +62,12 @@ const Services: React.FC = (): JSX.Element => {
               Renovation
             </h3>
             <p className="text-gray-600  max-w-[300px] text-center">
-              We offer renovation services to transform your space into
-              something new.
+              Transform your space with our renovation services, bringing a
+              fresh and innovative touch to your environment. Our expert team is
+              dedicated to revitalizing your surroundings, creating a new and
+              inspiring ambiance for you to enjoy. Experience the difference as
+              we breathe new life into your space through our transformative
+              renovation services.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4">
@@ -92,8 +99,11 @@ const Services: React.FC = (): JSX.Element => {
               Design & Planning
             </h3>
             <p className="text-gray-600 max-w-[300px] text-center">
-              We assist in planning & designing to help you get the most out of
-              your space.
+              Maximize the potential of your space with our assistance in
+              planning and designing. Our dedicated team is here to help you
+              optimize your environment, ensuring you get the most out of your
+              space. Count on us for expert guidance in creating functional and
+              aesthetically pleasing spaces tailored to your needs.
             </p>
           </div>
         </div>
