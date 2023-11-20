@@ -31,7 +31,12 @@ const ProjectDetail = () => {
         <div className="text-center">
           <br />
           <div className="ml-10" style={{ maxWidth: 770 }}>
-          <Carousel showArrows={true} infiniteLoop={true} showThumbs={true} thumbWidth={40}>
+            <Carousel
+              showArrows={true}
+              infiniteLoop={true}
+              showThumbs={true}
+              thumbWidth={40}
+            >
               {imagePaths.map((slideImage: any, index: number) => (
                 <div key={index}>
                   <img
@@ -53,22 +58,62 @@ const ProjectDetail = () => {
             {selectedProj}
           </h2>
           <hr />
-          <p className="max-w-[400px]">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur?
-          </p>
+          {selectedProj === "Fayetteville" ? (
+            <p className="max-w-[400px]">
+              Welcome to Performance Builders, where dreams become structures!
+              Our recent triumph involves constructing a state-of-the-art
+              Verizon store from the ground up on a once vacant lot.
+              Meticulously planning every step, our team expertly demolished the
+              existing structure to make way for the innovative design demanded
+              by our client. The result is a sleek, contemporary store exceeding
+              both client and community expectations. At Performance Builders,
+              we thrive on turning challenges into opportunities. This Verizon
+              store exemplifies our ability to seamlessly blend innovation,
+              sustainability, and functionality in all our construction
+              endeavors. Explore our portfolio to witness the transformative
+              journey from a vacant lot to a vibrant Verizon store, a beacon of
+              architectural prowess in the heart of the community.
+            </p>
+          ) : null}
+          {selectedProj === "Milton" ? (
+            <p className="max-w-[400px]">
+              Welcome to Performance Builders, where we bring architectural
+              dreams to life! Our latest accomplishment involves the
+              construction of state-of-the-art doctor's offices tailored for
+              Northside Hospital. Transforming an untouched parcel into modern
+              healthcare facilities, our team orchestrated a meticulous plan,
+              ensuring the fusion of innovation and practicality. Demolishing an
+              existing structure was a crucial step, allowing us to create a
+              contemporary design that aligns seamlessly with our client's
+              vision. At Performance Builders, we excel in turning obstacles
+              into opportunities. The doctor's offices for Northside Hospital
+              stand as a testament to our unwavering commitment to excellence in
+              construction. Take a journey through our portfolio to witness the
+              evolution from an open canvas to dynamic medical spaces,
+              exemplifying our unique approach to enhancing healthcare
+              environments with architectural flair.
+            </p>
+          ) : null}
+          {selectedProj === "Paddocks" ? (
+            <p className="max-w-[400px]">
+              Welcome to Performance Builders, where visions take shape! Our
+              recent achievement involves the construction of state-of-the-art
+              doctor's offices for Northside Hospital. Erecting these
+              cutting-edge facilities from the ground up on a previously
+              undeveloped site, our team meticulously planned and executed every
+              step, ensuring a seamless blend of innovation and functionality.
+              The project required us to expertly demolish an existing
+              structure, clearing the space for the contemporary design demanded
+              by our client. At Performance Builders, we specialize in turning
+              challenges into opportunities. The Northside Hospital doctor's
+              offices showcase our commitment to excellence in construction,
+              delivering spaces that exceed both client and community
+              expectations. Explore our portfolio to witness the transformative
+              journey from an empty space to vibrant medical facilities,
+              standing as a testament to our architectural prowess in enhancing
+              healthcare environments.
+            </p>
+          ) : null}
         </div>
       </div>
     </div>
