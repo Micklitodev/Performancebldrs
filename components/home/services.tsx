@@ -34,7 +34,7 @@ const Services: React.FC = (): JSX.Element => {
             <h3 className="text-2xl font-semibold text-gray-600">
               Construction
             </h3>
-            <p className="text-gray-600  max-w-[300px] text-center">
+            <p className="text-gray-600 lg:max-w-[300px] sm:max-w-[400px] text-center">
               Experience tailored construction solutions to fit your needs and
               budget, delivered with uncompromising quality. Our dedicated
               services are designed to meet your unique requirements, ensuring a
@@ -61,7 +61,7 @@ const Services: React.FC = (): JSX.Element => {
             <h3 className="text-2xl font-semibold text-gray-600 ">
               Renovation
             </h3>
-            <p className="text-gray-600  max-w-[300px] text-center">
+            <p className="text-gray-600 lg:max-w-[300px] sm:max-w-[400px] text-center">
               Transform your space with our renovation services, bringing a
               fresh and innovative touch to your environment. Our expert team is
               dedicated to revitalizing your surroundings, creating a new and
@@ -98,7 +98,7 @@ const Services: React.FC = (): JSX.Element => {
             <h3 className="text-2xl font-semibold text-gray-700">
               Design & Planning
             </h3>
-            <p className="text-gray-600 max-w-[300px] text-center">
+            <p className="text-gray-600 lg:max-w-[300px] sm:max-w-[400px] text-center">
               Maximize the potential of your space with our assistance in
               planning and designing. Our dedicated team is here to help you
               optimize your environment, ensuring you get the most out of your

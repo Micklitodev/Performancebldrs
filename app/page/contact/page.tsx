@@ -7,7 +7,7 @@ const Contact: NextPage<any> = async () => {
     <>
       <Suspense>
         <main
-          className={`flex flex-col min-h-screen items-center justify-between p-24`}
+          className={`flex flex-col items-center justify-center p-4 md:p-8 min-h-screen`}
         >
           <ContactForm />
         </main>

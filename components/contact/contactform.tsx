@@ -61,64 +61,65 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex items-center justify-center">
-      <Card className="w-full max-w-md p-8 mt-6 rounded shadow-md">
-        <CardContent>
-          <h2 className="text-3xl mb-10 font-bold text-zinc-700 tracking-tighter text-center sm:text-5xl">
-            Contact Us
-          </h2>
-          <p className="text-gray-500 mb-8 text-center">
-            Fill out the form below and we will get back to you as soon as
-            possible.
-          </p>
-          <form>
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <Input
-                  id="name"
-                  name="name"
-                  type="name"
-                  placeholder="Enter your name"
-                  onChange={handleChange}
-                  value={formData.name}
-                  className="w-full p-2 rounded"
-                />
-              </div>
+<div className="flex items-center justify-center mt-6">
+  <Card className="w-full max-w-md p-4 md:p-8 mt-6 rounded shadow-md">
+    <CardContent>
+      <h2 className="text-3xl mb-6 font-bold text-zinc-700 tracking-tighter text-center sm:text-5xl">
+        Contact Us
+      </h2>
+      <p className="text-gray-500 mb-4 text-center">
+        Fill out the form below and we will get back to you as soon as
+        possible.
+      </p>
+      <form>
+        <div className="space-y-4">
+          <div className="space-y-2">
+            <Input
+              id="name"
+              name="name"
+              type="name"
+              placeholder="Enter your name"
+              onChange={handleChange}
+              value={formData.name}
+              className="w-full p-2 rounded"
+            />
+          </div>
 
-              <div className="space-y-2">
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  onChange={handleChange}
-                  className="w-full p-2 rounded"
-                  value={formData.email}
-                />
-              </div>
+          <div className="space-y-2">
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              onChange={handleChange}
+              className="w-full p-2 rounded"
+              value={formData.email}
+            />
+          </div>
 
-              <div className="space-y-2">
-                <Textarea
-                  id="message"
-                  name="message"
-                  onChange={handleChange}
-                  placeholder="Enter your message"
-                  className="w-full p-2 rounded min-h-[200px]"
-                  value={formData.message}
-                />
-              </div>
+          <div className="space-y-2">
+            <Textarea
+              id="message"
+              name="message"
+              onChange={handleChange}
+              placeholder="Enter your message"
+              className="w-full p-2 rounded min-h-[200px]"
+              value={formData.message}
+            />
+          </div>
 
-              <Button
-                onClick={handleSubmit}
-                type="submit"
-                className="w-full p-2 bg-black text-white"
-              >
-                Send message
-              </Button>
-            </div>
-          </form>
-        </CardContent>
-      </Card>
-    </div>
+          <Button
+            onClick={handleSubmit}
+            type="submit"
+            className="w-full p-2 bg-black text-white"
+          >
+            Send message
+          </Button>
+        </div>
+      </form>
+    </CardContent>
+  </Card>
+</div>
+
   );
 }
