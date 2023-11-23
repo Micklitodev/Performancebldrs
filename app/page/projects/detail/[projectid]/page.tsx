@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
@@ -21,16 +21,15 @@ const ProjectDetail = () => {
   let imagePaths = imgPaths(selectedProj);
 
   return (
-    <div className="flex mt-10">
-      <div
-        style={{
-          ...windowStyle,
-        }}
-        className="inline-block"
-      >
-        <div className="text-center">
-          <br />
-          <div className="ml-10" style={{ maxWidth: 770 }}>
+    <div className="flex py-2 py-4 mr-4 ml-4 flex-col-reverse md:flex-row mt-10">
+      <div className="md:w-2/3 md:mr-4">
+        <div
+          style={{
+            ...windowStyle,
+          }}
+          className="text-center mb-4 md:mb-0"
+        >
+          <div className="ml-4 md:ml-0" style={{ maxWidth: "100%" }}>
             <Carousel
               showArrows={true}
               infiniteLoop={true}
@@ -42,8 +41,8 @@ const ProjectDetail = () => {
                   <img
                     src={`${slideImage.default.src}`}
                     alt={`Project Img ${index + 1}`}
-                    className="aspect-[1/1] object-cover object-center rounded-md"
-                    style={{ maxHeight: 500, maxWidth: 800 }}
+                    className="aspect-[1/1] object-cover object-center rounded-md mx-auto"
+                    style={{ maxHeight: 500, maxWidth: "100%" }}
                   />
                 </div>
               ))}
@@ -52,14 +51,14 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      <div className="float-right flex inline justify-center ml-14 mt-4">
-        <div>
-          <h2 className="text-3xl mb-10 font-bold text-zinc-700 text-center tracking-tighter sm:text-5xl">
+      <div className="md:w-1/3">
+        <div className="text-center md:text-left">
+          <h2 className="text-3xl mb-4 font-bold text-zinc-700 tracking-tighter md:text-5xl">
             {selectedProj}
           </h2>
-          <hr />
+          <hr className="mb-4" />
           {selectedProj === "Fayetteville" ? (
-            <p className="max-w-[400px]">
+            <p className="max-w-[400px] mx-auto md:max-w-none md:text-left">
               Welcome to Performance Builders, where dreams become structures!
               Our recent triumph involves constructing a state-of-the-art
               Verizon store from the ground up on a once vacant lot.
@@ -76,7 +75,7 @@ const ProjectDetail = () => {
             </p>
           ) : null}
           {selectedProj === "Milton" ? (
-            <p className="max-w-[400px]">
+            <p className="max-w-[400px] mx-auto md:max-w-none md:text-left">
               Welcome to Performance Builders, where we bring architectural
               dreams to life! Our latest accomplishment involves the
               construction of state-of-the-art doctor's offices tailored for
@@ -95,7 +94,7 @@ const ProjectDetail = () => {
             </p>
           ) : null}
           {selectedProj === "Paddocks" ? (
-            <p className="max-w-[400px]">
+            <p className="max-w-[400px] mx-auto md:max-w-none md:text-left">
               Welcome to Performance Builders, where visions take shape! Our
               recent achievement involves the construction of state-of-the-art
               doctor's offices for Northside Hospital. Erecting these

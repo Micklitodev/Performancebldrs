@@ -4,7 +4,7 @@ import Image from "next/image";
 const Head: React.FC = (): JSX.Element => {
   return (
     <>
-      <div className="flex justify-between">
+      <div className="flex justify-between lg:justify-center ">
         <div className="flex flex-col bg-white">
           <main className="flex-grow">
             <section className="w-full py-12">
