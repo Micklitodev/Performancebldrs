@@ -31,17 +31,17 @@ const ProjectDetail: React.FC = (): JSX.Element => {
                         <Carousel
                             showArrows={true}
                             infiniteLoop={true}
-                            showThumbs={true}
+                            showThumbs={false}
                             thumbWidth={40}
                         >
                             {imagePaths.map((slideImage: any, index: number) => (
                                 <div key={index}>
                                     <Image
                                         src={`${slideImage.default.src}`}
-                                        alt={`Project Img ${index + 1}`}
+                                        alt={`Projects ${index + 1}`}
                                         className="aspect-[1/1] object-cover object-center rounded-md mx-auto"
                                         height={100}
-                                        width={200}
+                                        width={500}
                                         style={{ maxHeight: 500, maxWidth: "100%" }}
                                     />
                                 </div>
