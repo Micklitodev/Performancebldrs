@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Footer = () => {
+const Footer: React.FC = (): JSX.Element => {
   const year = new Date().getFullYear();
 
   return (

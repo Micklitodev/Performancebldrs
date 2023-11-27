@@ -5,7 +5,7 @@ import Link from "next/link";
 import LogoIcon from "@/components/icons/logo";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const handleDropdownToggle = () => {

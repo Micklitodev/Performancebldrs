@@ -6,7 +6,7 @@ import { CardContent, Card } from "@/components/ui/card";
 import { useState } from "react";
 import { FormData } from "@/lib/types";
 
-export default function ContactForm() {
+export default function ContactForm(): JSX.Element {
   const lambdaFuncEP: any = process.env.NEXT_PUBLIC_LAMBDA_URI;
   const [formData, setFormData] = useState<FormData>({
     email: "",

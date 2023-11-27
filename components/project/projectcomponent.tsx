@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ProjectComponent: any = async () => {
+const ProjectComponent: React.FC = async (): Promise<JSX.Element> => {
   return (
     <>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

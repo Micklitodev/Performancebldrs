@@ -1,8 +1,9 @@
+'use server'
 import ProjectComponent from "@/components/project/projectcomponent";
 import { NextPage } from "next";
 import { Suspense } from "react";
 
-const Projects: NextPage<any> = async () => {
+const Projects: NextPage = async (): Promise<JSX.Element> => {
   return (
     <>
       <Suspense>

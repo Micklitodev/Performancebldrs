@@ -55,7 +55,7 @@ const slideImages = [
   },
 ];
 
-const ClientLogos = () => {
+const ClientLogos: React.FC = (): JSX.Element => {
   return (
     <div className="py-10 px-0">
       <div id="certs" className="text-center">

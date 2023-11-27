@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const AboutComponent = () => {
+const AboutComponent: React.FC = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center justify-center w-full py-12 md:py-24 lg:py-10 mb-8 md:mb-20">
       <div className="container space-y-8 px-4 md:px-6">
@@ -70,7 +70,7 @@ const AboutComponent = () => {
         <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
           <Link
             className="inline-flex text-zinc-950 h-10 items-center justify-center rounded-md border border-zinc-200 border-zinc-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:border-zinc-800 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:text-zinc-50 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-300"
-            href="/page/projects"
+            href="/page/contact"
           >
             Contact Us
           </Link>

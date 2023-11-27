@@ -1,8 +1,10 @@
+'use server'
+
 import { NextPage } from "next";
 import ContactForm from "@/components/contact/contactform";
 import { Suspense } from "react";
 
-const Contact: NextPage<any> = async () => {
+const Contact:  NextPage = async (): Promise<JSX.Element> => {
   return (
     <>
       <Suspense>

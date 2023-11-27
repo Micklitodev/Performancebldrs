@@ -1,7 +1,8 @@
 "use client";
+
 declare const require: any;
 
-const imgPaths = (siteRef: string) => {
+const imgPaths: Function = (siteRef: string) => {
   const context = require.context(
     `../public`,
     true, // Include subdirectories
@@ -14,6 +15,7 @@ const imgPaths = (siteRef: string) => {
 
   const imagePaths = filteredKeys.map((key: any) => context(key));
 
+  console.log('reload')
   return imagePaths;
 };
 
