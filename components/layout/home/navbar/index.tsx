@@ -23,6 +23,7 @@ export default function Navbar(): JSX.Element {
             <button
               className="flex items-center float-right mt-2 px-3 py-2 border rounded text-gray-600 border-gray-400 focus:outline-none focus:border-blue-500 focus:text-blue-500 dark:hover:text-blue-400 dark:focus:border-blue-400 dark:focus:text-blue-400"
               onClick={handleDropdownToggle}
+              aria-label="Toggle navbar dropdown"
             >
               <GiHamburgerMenu size={18} />
             </button>

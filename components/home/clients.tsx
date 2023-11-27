@@ -70,7 +70,7 @@ const ClientLogos: React.FC = (): JSX.Element => {
               showThumbs={false}
               showStatus={false}
               centerMode={true}
-              centerSlidePercentage={20} 
+              centerSlidePercentage={20}
               autoPlay={true}
               interval={2500}
             >
@@ -80,7 +80,7 @@ const ClientLogos: React.FC = (): JSX.Element => {
                     height={180}
                     width={180}
                     src={slideImage.url}
-                    alt={`client logo`}
+                    alt={`client logos (verison, homegoods, rackroom, ace, crunch, fiveblow, etc.)`}
                     className="w-full h-auto"
                   />
                 </div>

@@ -7,7 +7,7 @@ import Navbar from "@/components/layout/home/navbar";
 import Footer from "@/components/layout/home/footer";
 
 export const metadata: Metadata = {
-  title: "Performance Builders",
+  title: "Performance Builders Inc",
   description: "Quality commercial construction. Honest service. Great value.",
 };
 

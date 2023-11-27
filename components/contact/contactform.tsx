@@ -112,6 +112,7 @@ export default function ContactForm(): JSX.Element {
             onClick={handleSubmit}
             type="submit"
             className="w-full p-2 bg-black text-white"
+            ariaLabel='send message'
           >
             Send message
           </Button>

@@ -13,7 +13,7 @@ const windowStyle: React.CSSProperties = {
 };
 
 
-const ProjectDetail: React.FC = (): JSX.Element => {
+const ProjectCarousel: React.FC = (): JSX.Element => {
     const pathname = usePathname();
     const selectedProj: any = useMemo(() => pathname.split("/").pop(), [pathname]);
     const imagePaths = useMemo(() => imgPaths(selectedProj), [selectedProj]);
@@ -31,8 +31,9 @@ const ProjectDetail: React.FC = (): JSX.Element => {
                         <Carousel
                             showArrows={true}
                             infiniteLoop={true}
-                            showThumbs={false}
+                            showThumbs={true}
                             thumbWidth={40}
+                            renderThumbs={((children) => children = [...imagePaths.map((item: any, index: number) => <div key={index}> <Image alt='project image thumbnails' width={50} height={50} src={item.default.src} className="rounded" /></div>)])}
                         >
                             {imagePaths.map((slideImage: any, index: number) => (
                                 <div key={index}>
@@ -41,7 +42,7 @@ const ProjectDetail: React.FC = (): JSX.Element => {
                                         alt={`Projects ${index + 1}`}
                                         className="aspect-[1/1] object-cover object-center rounded-md mx-auto"
                                         height={100}
-                                        width={500}
+                                        width={600}
                                         style={{ maxHeight: 500, maxWidth: "100%" }}
                                     />
                                 </div>
@@ -119,4 +120,4 @@ const ProjectDetail: React.FC = (): JSX.Element => {
     );
 };
 
-export default ProjectDetail; 
+export default ProjectCarousel; 

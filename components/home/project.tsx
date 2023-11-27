@@ -10,16 +10,16 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
         </h2>
         <div className="mt-10 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex justify-center items-center">
-            <Link href="/page/projects/detail/Milton">
+            <Link href="/page/projects/detail/Milton" aria-label="Milton project images">
               <p className="text-zinc-700 text-xl py-2 text-center"> Milton </p>
               <Image
-                alt="Project 1"
+                alt="Milton project"
                 className="rounded-lg object-cover"
                 height="200"
                 src="/Milton/Photo_0.jpg"
                 style={{
                   aspectRatio: "300/200",
-                  objectFit: "cover",
+                  objectFit: "cover", 
                 }}
                 width="300"
               />
@@ -27,13 +27,13 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
           </div>
 
           <div className="flex justify-center items-center">
-            <Link href="/page/projects/detail/Paddocks">
+            <Link href="/page/projects/detail/Paddocks" aria-label="Paddocks project images">
               <p className="text-zinc-700 text-xl py-2 text-center">
                 {" "}
                 Paddocks{" "}
               </p>
               <Image
-                alt="Project 2"
+                alt="Paddocks project"
                 className="rounded-lg object-cover"
                 height="200"
                 src="/Paddocks/Photo_0.jpg"
@@ -46,12 +46,12 @@ const FeaturedProjects: React.FC = (): JSX.Element => {
             </Link>
           </div>
           <div className="flex justify-center items-center">
-            <Link href="/page/projects/detail/Fayetteville">
+            <Link href="/page/projects/detail/Fayetteville" aria-label="Fayetteville project images">
               <p className="text-zinc-700 text-xl py-2 text-center">
                 Fayetteville
               </p>
               <Image
-                alt="Project 3"
+                alt="Fayetteville project"
                 className="rounded-lg object-cover"
                 height="200"
                 src="/Fayetteville/Photo_0.jpg"
