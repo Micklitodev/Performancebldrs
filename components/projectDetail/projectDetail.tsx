@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import React, { useMemo } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from "next/image";
 
 const windowStyle: React.CSSProperties = {
     backgroundRepeat: "no-repeat",
@@ -35,10 +36,12 @@ const ProjectDetail: React.FC = (): JSX.Element => {
                         >
                             {imagePaths.map((slideImage: any, index: number) => (
                                 <div key={index}>
-                                    <img
+                                    <Image
                                         src={`${slideImage.default.src}`}
                                         alt={`Project Img ${index + 1}`}
                                         className="aspect-[1/1] object-cover object-center rounded-md mx-auto"
+                                        height={100}
+                                        width={200}
                                         style={{ maxHeight: 500, maxWidth: "100%" }}
                                     />
                                 </div>
