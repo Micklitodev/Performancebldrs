@@ -65,7 +65,7 @@ const ClientLogos: React.FC = (): JSX.Element => {
         <div className="flex justify-center">
           <div style={{ width: "95%" }}>
             <Carousel
-              showArrows={true}
+              showArrows={false}
               infiniteLoop={true}
               showThumbs={false}
               showStatus={false}
@@ -73,6 +73,7 @@ const ClientLogos: React.FC = (): JSX.Element => {
               centerSlidePercentage={20}
               autoPlay={true}
               interval={2500}
+              showIndicators={false}
             >
               {slideImages.map((slideImage, index) => (
                 <div key={index}>
