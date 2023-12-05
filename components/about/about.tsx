@@ -16,17 +16,17 @@ const AboutComponent: React.FC = (): JSX.Element => {
             </p>
             <div className="flex flex-col items-center md:flex-row md:space-x-4">
               <Image
-                width={448}
+                width={400}
                 height={200}
-                style={{ height: 200 }}
+                style={{ height: 220, width: 500 }}
                 alt="Performance Builders Work"
                 src="/PBgallery/2.jpg"
                 className="rounded mb-2 md:mb-0"
               />
               <Image
-                width={448}
+                width={400}
                 height={200}
-                style={{ height: 200 }}
+                style={{ height: 220, width: 500}}
                 alt="Performance Builders Work"
                 src="/PBgallery/3.jpg"
                 className="rounded"
