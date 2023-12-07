@@ -62,7 +62,7 @@ const ClientLogos: React.FC = (): JSX.Element => {
         <h2 className="text-4xl font-bold text-center text-gray-700 mb-10">
           Trusted Brands We've Built
         </h2>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
           <div style={{ width: "95%" }}>
             <Carousel
               showArrows={false}

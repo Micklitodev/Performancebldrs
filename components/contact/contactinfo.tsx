@@ -27,10 +27,10 @@ const ContactInfo: React.FC = (): JSX.Element => {
                                         Suwanee GA, 30024
                                     </li>
                                     <li className="mb-8">
-                                        (678)-473-0166
+                                       <Link href="tel:6784730166"> (678)-473-0166 </Link>
                                     </li>
                                     <li className="mb-20">
-                                        korey@Performancebldrs.com
+                                        <Link href='mailto:korey@performancebldrs.com'> korey@Performancebldrs.com </Link>
                                     </li>
                                 </ul>
                             </div>
